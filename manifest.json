@@ -1,0 +1,18 @@
+{
+  "name" : "Social Matrix",
+  "description" : "Display your social media onto a matrix.",
+  "version" : "1.0",
+  "manifest_version": 2,
+
+  "background": {"page": "background.html"},
+	"chrome_url_overrides" : {
+	"newtab": "Matrix.html"},
+  "browser_action" : {
+    "popup" : "popup.html",
+    "default_icon": "icon.png",
+    "content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+    "default_title" : "Social Matrix"
+  },
+
+  "permissions" : ["notifications"]
+}
