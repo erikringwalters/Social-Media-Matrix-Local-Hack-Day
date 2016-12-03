@@ -4,9 +4,12 @@
   "version" : "1.0",
   "manifest_version": 2,
 
-  "background": {"page": "background.html"},
+  "background": {
+    "page": "matrix.html"
+  },
 	"chrome_url_overrides" : {
-	"newtab": "Matrix.html"},
+	"newtab": "matrix.html"
+  },
   "browser_action" : {
     "popup" : "popup.html",
     "default_icon": "icon.png",
